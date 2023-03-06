@@ -32,22 +32,22 @@
 
 <div class="mySlides">
   <div class="numbertext">3 / 6</div>
-    <img src="img4.jpg">
+    <img src="img3.jpg">
 </div>
 
 <div class="mySlides">
   <div class="numbertext">4 / 6</div>
-    <img src="img5.jpg">
+    <img src="img4.jpg">
 </div>
 
 <div class="mySlides">
   <div class="numbertext">5 / 6</div>
-    <img src="img6.jpg">
+    <img src="img5.jpg">
 </div>
 
 <div class="mySlides">
   <div class="numbertext">6 / 6</div>
-    <img src="img7.jpg">
+    <img src="img6.jpg">
 </div>
 
 <!-- Next and previous buttons -->
@@ -61,23 +61,23 @@
 <!-- Thumbnail images -->
 <div class="row">
     <div class="column">
-      <img class="demo cursor"  onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="2018-2019 Intramurals Basketball Champions">
     </div>
     <div class="column">
-      <img class="demo cursor"  onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="2020 Ayana's 18th Birthday Celebration">
     </div>
     <div class="column">
-      <img class="demo cursor"  onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="2021 SHS Graduation Picture">
     </div>
     <div class="column">
-      <img onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="2022 Valorant Mini Tournament">
     </div>
     <div class="column">
-      <img class="demo cursor"  onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="2022 Nuvali with friends">
     </div>
     <div class="column">
-      <img class="demo cursor"  onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>  
+      <img class="demo cursor" src="img6.jpg" style="width:100%" onclick="currentSlide(6)" alt="2023 Picture with ?">
+    </div>
 </div>
 
 </div>
