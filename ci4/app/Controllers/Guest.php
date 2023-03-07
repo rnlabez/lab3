@@ -11,12 +11,13 @@ class Guest extends BaseController
         $model = model(GuestModel::class);
 
         $data = [
-            'guest'  => $model->getGuest(),
-            'title' => 'Guestbook',
+        'guest' => $model->getGuest(),
+        'title' => 'Guestbook',
         ];
 
         return view('templates/header', $data)
              . view('guest/index')
-             . view("templates/footer");
+             . view('templates/footer');
+
     }
 }
