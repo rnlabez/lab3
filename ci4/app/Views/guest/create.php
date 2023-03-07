@@ -1,23 +1,30 @@
-<?php
+<h2><?= esc($title) ?></h2>
 
-namespace App\Controllers;
+<?= session()->getFlashdata('error') ?>
+<?= validation_list_errors() ?>
 
-use App\Models\NewsModel;
+<form action="create" method="post">
+    <?= csrf_field() ?>
 
-class News extends BaseController
-{
-}// ...
+    <label for="name">Name</label>
+    <input type="input" name="name" value="<?= set_value('name') ?>">
+    <br>
 
-    public function create()
-    {
-    }helper('form');
+    <label for="email">Email</label>
+    <input type="input" name="email" value="<?= set_value('email') ?>">
+    <br>
 
-        // Checks whether the form is submitted.
-        if (! $this->request->is('post')) {
-            // The form is not submitted, so returns the form.
-            return view('templates/header', ['title' => 'Create a news item'])
-                . view('news/create')
-                . view('templates/footer');
-        }
+    <label for="website">Website</label>
+    <input type="input" name="website" value="<?= set_value('website') ?>">
+    <br>
 
-        $post = $this->request->getPost(['title', 'body']);
+    <label for="comment">Comment</label>
+    <textarea name="comment" cols="45" rows="4"><?= set_value('comment') ?></textarea>
+    <br>
+
+    <label for="gender">Gender</label>
+    <input type="input" name="gender" value="<?= set_value('gender') ?>">
+    <br>
+
+    <input type="submit" name="submit" value="Create guest entry">
+</form>
